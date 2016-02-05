@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>文字轉圖片</title>
+	<script src="http://html2canvas.hertzen.com/build/html2canvas.js"></script>
+	<script src="photofinishing.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>文字轉圖片</h1>
+	</header>
+	<div id="main">
+		<label for="shot">請輸入文字：</label>
+		<textarea type="text" id="shot" name="shot" rows="4" cols="50" maxlength="220"></textarea> <br />
+		<input type="button" onclick="convert({'b-bg':1})" value="黑底白字！" id="btn1" class="btn">
+		<input type="button" onclick="convert()" value="白底黑字！" id="btn2" class="btn">
+		<div id="backsheet"></div>
+		<div id="photo"></div>
+	</div>
+	<footer>
+		Wildsky - MIT
+	</footer>
+</body>
+</html>
