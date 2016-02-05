@@ -18,8 +18,7 @@ function convert(option) {
 			div.innerHTML = "";
 			var img = document.createElement("img");
 			img.src = canvas.toDataURL("image/png");
-			img.width = 360;
-			img.width = 360;
+			img.width = 600;
 			div.appendChild(img);
 			backsheet.style.display = "none";
 		}
