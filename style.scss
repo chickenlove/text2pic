@@ -19,11 +19,16 @@ header {
 #main {
 	flex: 1;
 	padding: 2rem;
+	@media only screen and (max-width: 480px) {
+		padding: 1rem;
+	}
 
 	label {
 		display: block;
 	}
 	#shot {
+		margin: 1rem auto;
+		max-width: 90%;
 		outline-color: #fff;
 	}
 	.btn {
@@ -41,10 +46,15 @@ header {
 		word-break: break-all;
 	}
 	#photo {
+		margin: 1rem auto;
 		padding: 2rem;
+		@media only screen and (max-width: 480px) {
+			padding: 0;
+		}
 		img {
 			box-shadow: 2px 2px 5px rgba(0,0,0,.7);
 			margin: 0 auto;
+			max-width: 100%;
 		}
 	}
 }
