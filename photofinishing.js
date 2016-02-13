@@ -1,6 +1,6 @@
 function convert(option) {
 	var backsheet = document.querySelector("#backsheet");
-	backsheet.innerHTML = document.querySelector("#shot").value.replace(/\n/g, "<br />");
+	backsheet.innerHTML = document.querySelector("#shot").value.replace(/ /g, "&nbsp;").replace(/\n/g, "<br />");
 
 	backsheet.style.display = "block";
 	if(option && option["b-bg"]) {
